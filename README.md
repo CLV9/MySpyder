@@ -1,12 +1,12 @@
 #  MySpyder
-Назначение: парсинг + поиск и ранжирование новостей по запросам на сайте gazeta.ru(https://www.gazeta.ru/news/)
+Назначение: парсинг + поиск и ранжирование новостей по запросам на сайте [gazeta.ru](https://www.gazeta.ru/news/)
 
 # Были использованы библиотеки:
   - Scrapy для парсинга данных с сайта
   - Elastic Search для поиска и ранжирования запросов
  
 # Инструкция по запуску Elastic Search:
-  - Скачать серверную часть ElasticSearch по ссылке(https://www.elastic.co/downloads/elasticsearch) и запустить файл `elasticsearch.bat`
+  - Скачать серверную часть ElasticSearch по [ссылке](https://www.elastic.co/downloads/elasticsearch) и запустить файл `elasticsearch.bat`
   - Указать путь к распаршенным данным в `app_config.py`
   - Запустить файл `elastic_search.py`
  
