@@ -10,3 +10,4 @@ class GazetaItem(scrapy.Item):
     title = scrapy.Field()
     body = scrapy.Field()
     date = scrapy.Field()
+    url = scrapy.Field()

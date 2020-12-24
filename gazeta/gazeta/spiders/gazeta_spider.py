@@ -2,7 +2,8 @@ from gazeta.items import GazetaItem
 import scrapy
 from urllib.parse import urljoin
 
-#scrapy crawl gazeta -o output.json
+
+# scrapy crawl gazeta -o output.json
 
 class GazetaSpider(scrapy.Spider):
     name = "gazeta"
@@ -17,6 +18,8 @@ class GazetaSpider(scrapy.Spider):
         item['body'] = body
         date = response.xpath('//*[@id="news-content"]/article/div[1]/time/text()').extract()
         item['date'] = date
+        url = response.url
+        item['url'] = url
         yield item
 
     def parse(self, response):
@@ -32,5 +35,3 @@ class GazetaSpider(scrapy.Spider):
 
             next_page_url = urljoin(response.url + '/', next_page)
             yield response.follow(next_page_url, callback=self.parse)
-
-

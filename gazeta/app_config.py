@@ -1,0 +1,1 @@
+data_path = 'D:\Projects\MySpyder\gazeta\output.json'
