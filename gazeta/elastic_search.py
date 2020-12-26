@@ -1,7 +1,6 @@
 from elasticsearch import Elasticsearch
 from beautifultable import BeautifulTable
 from wiki_ru_wordnet import WikiWordnet
-import time
 import json
 import app_config
 from enum import IntEnum
@@ -54,7 +53,6 @@ class Searcher:
             k = 1
             for item in data:
                 self.es.index(index=self.index_name, id=k, body=item)
-                # time.sleep(0.2)
                 k += 1
 
     def add_synonyms(self, query):
