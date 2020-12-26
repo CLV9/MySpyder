@@ -16,6 +16,4 @@
   - Для запуска парсера запустите скрипт `crawl_start.py`
   
 # Метрика качества ранжирования NDCG:
-  - В файле `NDCG.pdf` находится расчёт метрики NDCG
-  
-![NDCG](https://sun9-32.userapi.com/impf/ofRqLI893u0BglA_jUqd1XqGrE_vQ4YEtuCnyw/XJlCKcw4qdo.jpg?size=1149x666&quality=96&proxy=1&sign=79f380d5313daed6016182cc223a6e9f&type=album "NDCG")
+  - В файле `NDCG.xlsx` находится расчёт метрики NDCG ([Ссылка](https://docs.google.com/spreadsheets/d/1utjAxQciItuYhGKDyZDP_PTrtemvDA-jP66mVO3fzc8/edit?usp=sharing) на Google Sheets)
